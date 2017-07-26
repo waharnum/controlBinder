@@ -1,4 +1,4 @@
-/* global fluid, floe */
+/* global fluid, sjrk */
 
 (function ($, fluid) {
 
@@ -36,13 +36,13 @@
             var control, invoker, jqEvent, selector;
 
             // Determine short or long form
-            if(typeof(record) === "string") {
+            if (typeof(record) === "string") {
                 selector = key;
                 invoker = record;
                 jqEvent = "click";
             }
 
-            if(typeof(record) === "object") {
+            if (typeof(record) === "object") {
                 selector = record.selector;
                 invoker = record.invoker;
                 jqEvent = record.jqEvent;
